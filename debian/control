@@ -1,0 +1,16 @@
+Source: hamster
+Section: misc
+Priority: optional
+Maintainer: Thomas Hager <duke@sigsegv.at>
+Build-Depends: debhelper-compat (= 12), gettext, intltool, python3-gi-cairo, python3-distutils, python3-dbus, python3-xdg, libglib2.0-dev
+Standards-Version: 4.4.1
+Homepage: https://github.com/projecthamster/hamster
+Vcs-Git: https://github.com/projecthamster/hamster
+
+Package: hamster
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Time tracking for individuals
+ Hamster is time tracking for individuals.
+ It helps you to keep track of how much time you have
+ spent during the day on activities you choose to track.

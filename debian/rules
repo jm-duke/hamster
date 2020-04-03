@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+
+override_dh_auto_configure:
+	./waf configure
+
+override_dh_auto_build:
+	./waf build
+
+override_dh_auto_install:
+	./waf install --destdir inst
+
+override_dh_auto_clean:
+	rm -rf inst/
+	dh_clean
+
+override_dh_auto_test:
+
